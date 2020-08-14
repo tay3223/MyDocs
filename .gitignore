@@ -1,0 +1,21 @@
+# =========================================
+# git提交时，会忽略.gitignore中的文件
+# =========================================
+
+nohup.out
+
+.MWebMetaData
+.MWebMetaData/
+*.MWebMetaData
+*.MWebMetaData/
+
+media
+media/
+*media
+*media/
+
+*.idea
+*.project
+*.DS_Store
+*.pyc
+*.env
