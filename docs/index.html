@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Tay的博客</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="description" content="Description">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="static/css/vue.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Tay的博客</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="static/css/vue.css">
+</head>
 
-    <body>
-        <div id="app">加载中...</div>
-        <script>
-            window.$docsify = {
-                // 文档标题，会显示在侧边栏顶部。
-                name: '首页',
+<body>
+    <div id="app">加载中...</div>
+    <script>
+        window.$docsify = {
+            // 文档标题，会显示在侧边栏顶部。
+            name: '首页',
 
-                // 点击文档标题后跳转的路径
-                nameLink: '/',
+            // 点击文档标题后跳转的路径
+            nameLink: '/',
 
-                // 配置仓库地址，会在页面右上角渲染一个 GitHub Corner 挂件。
-                repo: 'https://github.com/tay3223/MyDocs',
+            // 配置仓库地址，会在页面右上角渲染一个 GitHub Corner 挂件。
+            repo: 'https://github.com/tay3223/MyDocs',
 
-                //注：配置了loadSidebar后就不会生成默认的侧边栏了。
-                loadSidebar: true,
+            //注：配置了loadSidebar后就不会生成默认的侧边栏了。
+            loadSidebar: true,
 
-                // 同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题。
-                // loadSidebar: true,
-                // autoHeader: true,
+            // 同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题。
+            // loadSidebar: true,
+            // autoHeader: true,
 
-                //设置在侧边栏显示当前页面的目录(标题)。《0：不显示，1只显示一级标题，2显示一二级标题，3显示一二三级标题，n显示所有标题》
-                subMaxLevel: 0,
+            //设置在侧边栏显示当前页面的目录(标题)。《0：不显示，1只显示一级标题，2显示一二级标题，3显示一二三级标题，n显示所有标题》
+            subMaxLevel: 0,
 
-                //使用配置文件来配置导航栏（使用这种配置文件配置的导航栏，只有在定制的首页才可以生效，不过我这里测试的好像还是在每个页面都能生效）
-                loadNavbar: true,
+            //使用配置文件来配置导航栏（使用这种配置文件配置的导航栏，只有在定制的首页才可以生效，不过我这里测试的好像还是在每个页面都能生效）
+            loadNavbar: true,
 
-                //允许设置封面
-                coverpage: true,
+            //允许设置封面
+            coverpage: true,
 
-                //设置这个参数后，封面就会变成首页，而原来的首页需要http://localhost:3000/#/README才能访问
-                onlyCover: true,
+            //设置这个参数后，封面就会变成首页，而原来的首页需要http://localhost:3000/#/README才能访问
+            onlyCover: true,
 
-                // 搜索插件
-                search: {
-                    maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-                    paths: 'auto', // or 'auto'，匹配文件路径
+            // 搜索插件
+            search: {
+                maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+                paths: 'auto', // or 'auto'，匹配文件路径
 
-                    placeholder: {
-                        '/': '搜索',
-                    },
-
-                    noData: {
-                        '/': '找不到结果',
-                    },
-                    // 搜索标题的最大层级1 - 6
-                    depth: 6,
+                placeholder: {
+                    '/': '搜索',
                 },
 
-                //切换页面后是否跳转到页面顶部
-                auto2top: true,
-
-                // 小屏设备下合并导航栏到侧边栏。
-                mergeNavbar: true,
-
-                // 显示上一章节,或下一章节
-                pagination: {
-                    previousText: '上一章节',
-                    nextText: '下一章节',
-                    crossChapter: true,
+                noData: {
+                    '/': '找不到结果',
                 },
+                // 搜索标题的最大层级1 - 6
+                depth: 6,
+            },
 
-                // 复制到剪贴板
-                // docsify-copy-code (defaults)
-                copyCode: {
-                    buttonText: '复制到剪贴板',
-                    errorText: '错误',
-                    successText: '复制',
-                },
+            //切换页面后是否跳转到页面顶部
+            auto2top: true,
 
-            }
+            // 小屏设备下合并导航栏到侧边栏。
+            mergeNavbar: true,
 
-            // 开启离线模式
-            // if (typeof navigator.serviceWorker !== 'undefined') {
-            //     navigator.serviceWorker.register('sw.js')
-            // }
-        </script>
+            // 显示上一章节,或下一章节
+            pagination: {
+                previousText: '上一章节',
+                nextText: '下一章节',
+                crossChapter: true,
+            },
+
+            // 复制到剪贴板
+            // docsify-copy-code (defaults)
+            copyCode: {
+                buttonText: '复制到剪贴板',
+                errorText: '错误',
+                successText: '复制',
+            },
+
+        }
+
+        // 开启离线模式
+        // if (typeof navigator.serviceWorker !== 'undefined') {
+        //     navigator.serviceWorker.register('sw.js')
+        // }
+    </script>
 
 
 
-        <!-- 基础引用 -->
-        <script src="static/js/docsify.min.js"></script>
-        <!-- 搜索插件 -->
-        <script src="static/js/search.min.js"></script>
-        <!-- markdown语法高亮显示 -->
-        <script src="static/js/prism-bash.min.js"></script>
-        <!-- 显示下一章的按钮 -->
-        <!-- <script src="static/js/docsify-pagination.min.js"></script> -->
-        <!-- 复制到剪贴板 -->
-        <script src="static/js/docsify-copy-code.min.js"></script>
+    <!-- 基础引用 -->
+    <script src="static/js/docsify.min.js"></script>
+    <!-- 搜索插件 -->
+    <script src="static/js/search.min.js"></script>
+    <!-- markdown语法高亮显示 -->
+    <script src="static/js/prism-bash.min.js"></script>
+    <!-- 显示下一章的按钮 -->
+    <!-- <script src="static/js/docsify-pagination.min.js"></script> -->
+    <!-- 复制到剪贴板 -->
+    <script src="static/js/docsify-copy-code.min.js"></script>
 
-        <!-- 下面一堆是语法高亮 -->
-        <script src="static/js/prism-python.min.js"></script>
-        <script src="static/js/prism-git.min.js"></script>
-        <script src="static/js/prism-http.min.js"></script>
-        <script src="static/js/prism-json.min.js"></script>
-        <script src="static/js/prism-markdown.min.js"></script>
-        <script src="static/js/prism-nginx.min.js"></script>
-        <script src="static/js/prism-sql.min.js"></script>
-        <script src="static/js/prism-wiki.min.js"></script>
-    </body>
+    <!-- 下面一堆是语法高亮 -->
+    <script src="static/js/prism-python.min.js"></script>
+    <script src="static/js/prism-git.min.js"></script>
+    <script src="static/js/prism-http.min.js"></script>
+    <script src="static/js/prism-json.min.js"></script>
+    <script src="static/js/prism-markdown.min.js"></script>
+    <script src="static/js/prism-nginx.min.js"></script>
+    <script src="static/js/prism-sql.min.js"></script>
+    <script src="static/js/prism-wiki.min.js"></script>
+</body>
 
 </html>
