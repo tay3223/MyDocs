@@ -4,18 +4,10 @@
 
 nohup.out
 
+.DS_Store
 .MWebMetaData
-.MWebMetaData/
-*.MWebMetaData
-*.MWebMetaData/
-
+.idea
+.project
+.pyc
+.env
 media
-media/
-*media
-*media/
-
-*.idea
-*.project
-*.DS_Store
-*.pyc
-*.env
