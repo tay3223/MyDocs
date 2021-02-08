@@ -7,6 +7,8 @@
 * [brew国内加速](biubiu/brew国内加速)
 
 **小白教程**
+* [安装zsh](biubiu/zsh.md)
+* [安装brew](biubiu/brew.md)
 * [安装nodejs和vue](biubiu/install_vue.md)
 
 **git操作**
