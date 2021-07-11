@@ -12,4 +12,5 @@ nohup.out
 .project
 .pyc
 .env
+node_modules
 media

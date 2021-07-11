@@ -1,4 +1,4 @@
-# Tay的博客
+# Tay的笔记
 
 
 本站使用`Github Pages + Docsify`完成搭建~
